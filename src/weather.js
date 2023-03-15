@@ -6,11 +6,14 @@ const weatherError = document.querySelector('.weather-error');
 const humidity = document.querySelector('.humidity');
 const city = document.querySelector('.city');
 
-window.addEventListener('boforeunload',ourStorage());
+window.addEventListener('beforeunload',ourStorage());
+
 function ourStorage(){
+	if(localStorage.getItem('city') === null){
+		defaultCity();
+	}
   if(localStorage.getItem('city').length !== 0){
     city.value = localStorage.getItem('city');
-		console.log(city.value);
   } else {
     defaultCity();
   }
