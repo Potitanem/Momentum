@@ -271,7 +271,7 @@ input[type="range"]{
 }
 
 .city {
-  width: 240px;
+  width: 170px;
   height: 34px;
   padding: 5px;
   font-size: 20px;
@@ -416,8 +416,10 @@ input[type="range"]{
   .header{
     flex-direction: column;
     align-items: center;
+    height: 500px;
   }
   .weather{
+    align-items: center;
     margin-top: 30px;
   }
   .time{
