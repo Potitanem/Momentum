@@ -558,7 +558,6 @@
 }
 
 body {
-  min-height: 100vh;
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   color: #fff;
@@ -576,10 +575,15 @@ body {
   height: 30vh;
   min-height: 220px;  
   padding: 20px;
+  font-size: 25px;
 }
 
 .details{
   margin-bottom: 8px;
+}
+
+.player{
+  width: 350px;
 }
 
 .track-name{
@@ -660,7 +664,8 @@ body {
 .change-quote:active,
 .repeat-track:active {
   border: 0;
-  outline: 0;  
+  outline: 0; 
+  opacity: 1;
   transform: scale(1.1);
 }
 
@@ -693,8 +698,12 @@ body {
   user-select: none;
 }
 
+input[type="range"]{
+  -webkit-appearance: none;
+   appearance: none;
+}
+
 .slider{
-  appearance: none;
   width: 100%;
   height: 6px;
   outline: none;
@@ -705,6 +714,7 @@ body {
 
 .slider::-webkit-slider-thumb{
   -webkit-appearance: none;
+  appearance: none;
   width: 0.9em;
   height: 0.9em;
   z-index: 3;
@@ -774,10 +784,10 @@ body {
 }
 
 .city {
-	width: 170px;
+	width: 245px;
 	height: 34px;
 	padding: 5px;
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 24px;
 	color: #fff;
 	border: 0;
@@ -792,7 +802,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   row-gap: 5px;
-  width: 180px;
+  width: 245px;
   min-height: 180px;  
   text-align: left;
 }
@@ -917,6 +927,7 @@ body {
   height: 30vh;
   min-height: 160px;  
   padding: 20px;
+  font-size: 2vh;
 }
 
 .change-quote {
@@ -954,13 +965,13 @@ body {
 }
 
 
-@media (max-width: 540px) {
+@media (max-width: 647px) {
   .header{
     flex-direction: column;
     align-items: center;
   }
-  .main{
-    margin-top: 80px;
+  .weather{
+    margin-top: 30px;
   }
   .time{
     font-size: 60px;
