@@ -19,7 +19,7 @@ showTime();
 export default function getTimeOfDay(){
 	const greetingYou = new Date();
 	const hours = greetingYou.getHours();
-	const arrDay = ['morning', 'afternoon', 'evening', 'night'];
+	const arrDay = ['night', 'morning', 'afternoon', 'evening'];
 	return arrDay[Math.floor(hours/6)];
 }
 
